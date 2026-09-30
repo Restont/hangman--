@@ -7,8 +7,6 @@ if language in ["en", "англ", "engl", "eng", "анг"]:
     # words
 
     words = ["cat", "house", "forest", "ball", "cheese", "moon", "river", "winter", "bear"]
-    word = random.choice(words)
-    guessed = []
     
     # lives
     
@@ -50,6 +48,9 @@ if language in ["en", "англ", "engl", "eng", "анг"]:
     print()
     
     # game
+
+    word = random.choice(words)
+    guessed = []
 
     while lives > 0:
         for letter in word:
@@ -107,8 +108,6 @@ if language in ["en", "англ", "engl", "eng", "анг"]:
 
 elif language in ["ru", "рус", "ру", "русский", "rus", "russian"]:
     words = ["планета", "монитор", "лес", "игрок", "сыр", "луна", "речка", "зима", "медведь"]
-    word = random.choice(words)
-    guessed = []
     
     # жизни
     
@@ -146,6 +145,9 @@ elif language in ["ru", "рус", "ру", "русский", "rus", "russian"]:
     print()
     
     # игра
+
+    word = random.choice(words)
+    guessed = []
 
     print("Игра «Виселица»!")
     print(f"Слово из {len(word)} букв. Жизней: {lives}")
